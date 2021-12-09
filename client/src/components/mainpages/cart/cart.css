@@ -1,17 +1,24 @@
-.Cartcontainer{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-
 .cart{
-    position: relative;
+    width: 1000px;
     border: 1px solid #ccc;
     transform: scaleY(0.98);
-    animation: taadaa 2s both;
+    animation: fadeInBottom s both;
+}.yourcart{
+    margin-top: 150px ;
+}
+.pagename{
+    font-size: 56px;
+    text-align: center;
+}
+.titledetail p{
+    color: inherit;
+    text-decoration: inherit;
+}
+    
+
+.desimgcart{
+    height: 100px;
+    width: 100px;
 }
 .amount span{
     color: crimson;
@@ -31,28 +38,23 @@
     cursor: pointer;
 }
 .total{
-    
     width: 100%;
     height: 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    animation: taadaa 2.5s both;
+    animation: fadeInBottom 2.5s both;
     margin-bottom: 40px ;
-   padding-right: 135px;
-   padding-left: 135px;
-
 }
 
-.total h3{
+ .total h3{
     color: crimson;
     background-color: #fff;
-    
-   
+    width: 150px;
+    height: 30px;
     border-radius: 8px;
     display: flex;
     justify-content: center;
-    font-size: 36px;
     align-items: center;
 }
 .select{
@@ -65,8 +67,7 @@
 }
 #btn_select{
     background-color: darkgoldenrod;
-    width: 50%;
-    margin-right:20px;
+    width: 200px;
     height: 50px;
     display: flex;
     justify-content: center;
@@ -76,8 +77,7 @@
 }
 #btn_checkout{
     background-color: crimson;
-    width: 50%;
-   
+    width: 100px;
     height: 50px;
     display: flex;
     justify-content: center;
@@ -103,66 +103,3 @@
     font-weight: 700;
     color: rgb(7, 128, 165);
 }
-
-
-/*cart table*/
-.tablecart{
-    width: 95%;
-    border-collapse: collapse;
-    font-size: 1em;
-    font-family: sans-serif;
-    margin: auto;
-    
-    
-}
-
-.tablecart thead tr{
-    background-color: #009879;
-    color: #ffffff;
-}
-
-.tablecontainer{
-    width: 90%;
-   
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-    
-}
-
-.desimgcart{
-    max-width: 200px;
-    height: 200px;
-    object-fit: cover;
-}
-
-.removeimg{
-    width: 25px;
-    height: 25px;
-    object-fit: cover;
-    opacity: 0.6;
-    transition: 0.5s;
-    cursor: pointer;
-}
-.removeimg:hover{
-    opacity: 1;
-}
-
-.amountbtn{
-    border-radius: 50%;
-}
-
-@keyframes taadaa { 
-    0% {
-      opacity: 0;
-    }
-  
-    100% {
-      opacity: 1;
-    }
-  }
-
-  .descriptioncart{
-      width: 400px;
-  }
